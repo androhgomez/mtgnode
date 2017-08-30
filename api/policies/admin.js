@@ -11,7 +11,7 @@ module.exports = function(req, res, next) {
 
   // User is allowed, proceed to the next policy, 
   // or if this is the last policy, the controller
-  if (req.session.user.id == 1) {
+  if (req.session.authenticated && req.session.user.id == 1) {
     return next();
   }
 

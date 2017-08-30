@@ -22,8 +22,11 @@ module.exports.connections = {
 
   // Main persistent file storage
   mtgnode: {
-    adapter: 'sails-disk',
-    filePath: 'database/'
+    adapter:  'sails-postgresql',
+    host:     'localhost',
+    user:     'mtgnode_dev',
+    password: 'mtgnodedev',
+    database: 'mtgnode_dev'
   },
 
   // In Memory
