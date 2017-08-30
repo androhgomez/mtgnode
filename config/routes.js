@@ -1,8 +1,8 @@
 module.exports.routes = {
 
   // Basic routes
-  '/': {controller: 'Login', action: 'login'},
-  '/lobby': {controller: 'Lobby', action: 'lobby'},
+  '/': {controller: 'Lobby', action: 'lobby'},
+  '/login': {controller: 'Login', action: 'login'},
   '/deck-builder': {controller: 'DeckBuilder', action: 'builder'},
   '/playground/:id': {controller: 'Playground', action: 'playground'},
 
